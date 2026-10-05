@@ -1,58 +1,31 @@
-import TopBar from './components/layout/TopBar'
-import Navbar from './components/layout/Navbar'
-import Footer from './components/layout/Footer'
-import StickyMobileCta from './components/layout/StickyMobileCta'
-
-import Hero from './components/sections/Hero'
-import Pillars from './components/sections/Pillars'
-import PainSection from './components/sections/PainSection'
-import Transformation from './components/sections/Transformation'
-import WhatIsMixology from './components/sections/WhatIsMixology'
-import CocktailConstruction from './components/sections/CocktailConstruction'
-import Curriculum from './components/sections/Curriculum'
-import BonusSection from './components/sections/BonusSection'
+import NavbarOriginal from './components/original/NavbarOriginal'
+import HeroOriginal from './components/original/HeroOriginal'
+import DrinksOriginal from './components/original/DrinksOriginal'
+import CurriculumOriginal from './components/original/CurriculumOriginal'
+import AboutOriginal from './components/original/AboutOriginal'
 import GalleryAcademy from './components/sections/GalleryAcademy'
-import HowAccessWorks from './components/sections/HowAccessWorks'
-import Instructors from './components/sections/Instructors'
-import ForWho from './components/sections/ForWho'
-import Applications from './components/sections/Applications'
-import ValueStack from './components/sections/ValueStack'
-import SocialProof from './components/sections/SocialProof'
-import Decision from './components/sections/Decision'
-import Faq from './components/sections/Faq'
-import FinalCta from './components/sections/FinalCta'
+import InstructorOriginal from './components/original/InstructorOriginal'
+import FaqOriginal from './components/original/FaqOriginal'
+import ContactOriginal from './components/original/ContactOriginal'
+import FinalCtaOriginal from './components/original/FinalCtaOriginal'
+import Footer from './components/layout/Footer'
 
-function App() {
+export default function App() {
   return (
-    <div className="min-h-screen bg-[#0B0B0B] text-[#F3E8CF] pb-24 lg:pb-0 font-sans selection:bg-gold/30 selection:text-white">
-      <TopBar />
-      <Navbar />
-
-      <main>
-        <Hero />
-        <Pillars />
-        <PainSection />
-        <Transformation />
-        <WhatIsMixology />
-        <CocktailConstruction />
-        <Curriculum />
-        <BonusSection />
+    <div className="min-h-screen bg-background text-foreground font-body antialiased selection:bg-primary/30 selection:text-foreground">
+      <NavbarOriginal />
+      <main className="w-full">
+        <HeroOriginal />
+        <DrinksOriginal />
+        <CurriculumOriginal />
+        <AboutOriginal />
         <GalleryAcademy />
-        <HowAccessWorks />
-        <Instructors />
-        <ForWho />
-        <Applications />
-        <ValueStack />
-        <SocialProof />
-        <Decision />
-        <Faq />
-        <FinalCta />
+        <InstructorOriginal />
+        <FaqOriginal />
+        <ContactOriginal />
+        <FinalCtaOriginal />
       </main>
-
       <Footer />
-      <StickyMobileCta />
     </div>
   )
 }
-
-export default App

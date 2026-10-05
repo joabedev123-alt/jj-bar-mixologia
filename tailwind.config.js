@@ -5,6 +5,39 @@ export default {
   theme: {
     extend: {
       colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        card: {
+          DEFAULT: 'var(--card)',
+          foreground: 'var(--card-foreground)',
+        },
+        popover: {
+          DEFAULT: 'var(--popover)',
+          foreground: 'var(--popover-foreground)',
+        },
+        primary: {
+          DEFAULT: 'var(--primary)',
+          foreground: 'var(--primary-foreground)',
+        },
+        secondary: {
+          DEFAULT: 'var(--secondary)',
+          foreground: 'var(--secondary-foreground)',
+        },
+        muted: {
+          DEFAULT: 'var(--muted)',
+          foreground: 'var(--muted-foreground)',
+        },
+        accent: {
+          DEFAULT: 'var(--accent)',
+          foreground: 'var(--accent-foreground)',
+        },
+        destructive: {
+          DEFAULT: 'var(--destructive)',
+          foreground: 'var(--destructive-foreground)',
+        },
+        border: 'var(--border)',
+        input: 'var(--input)',
+        ring: 'var(--ring)',
         dark: {
           950: '#070707',
           900: '#0B0B0B',
@@ -31,8 +64,10 @@ export default {
         },
       },
       fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
+        display: ['"Bebas Neue"', '"Playfair Display"', 'sans-serif'],
+        body: ['"Inter"', 'system-ui', 'sans-serif'],
         cinzel: ['"Cinzel"', 'serif'],
+        oswald: ['"Oswald"', 'sans-serif'],
         sans: ['"Inter"', 'system-ui', 'sans-serif'],
       },
       boxShadow: {

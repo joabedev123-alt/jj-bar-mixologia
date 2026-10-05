@@ -13,7 +13,7 @@ export const PRECO_PARCELADO = '12x de R$ 14,76'
 
 export const SITE = {
   name: 'JJ Bar e Barista Academy',
-  courseName: 'Curso de Mixologia',
+  courseName: 'Curso de Mixologia Molecular',
   domain: 'www.jjbarebaristaacademy.com',
   price: PRECO_MIXOLOGIA,
   pricePrevious: PRECO_ANTERIOR_MIXOLOGIA,

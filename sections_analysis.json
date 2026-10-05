@@ -1,0 +1,158 @@
+[
+  {
+    "index": 1,
+    "attrs": "id=\"inicio\" class=\"relative flex min-h-screen items-center overflow-hidden\" data-tsd-source=\"/src/routes/index.tsx:220:7\"",
+    "headings": [
+      "MixologiaMolecular"
+    ],
+    "paragraphs": [
+      "Curso de",
+      "Ciência, criatividade e técnica para criar experiências únicas — e transformar o seu bar, cafeteria ou eventos em uma nova receita mensal.",
+      "Você quer expandir o seu negócio ou sua profissão trazendo uma nova receita mensal através da mixologia?",
+      "Se alguma dessas perguntas mexeu com você, este curso é o próximo passo:",
+      "Você quer expandir o seu negócio ou sua profissão trazendo uma nova receita mensal através da mixologia?Quer criar drinks autorais que aumentem o ticket médio e o lucro do seu bar, cafeteria ou restaurante?Quer dominar esferificação, gelificação, defumação e espumas para se diferenciar da concorrência?Quer transformar eventos, happy hours e datas especiais em uma nova fonte de renda para o seu negócio?Quer ser reconhecido como especialista no seu mercado e passar a cobrar mais pelo que já faz?Seja um MixologistaVagas limitadas por turma"
+    ],
+    "buttons": [
+      "Seja um Mixologista"
+    ],
+    "imgCount": 1
+  },
+  {
+    "index": 2,
+    "attrs": "id=\"drinks\" class=\"mx-auto max-w-6xl px-4 py-24\" data-tsd-source=\"/src/routes/index.tsx:273:7\"",
+    "headings": [
+      "Drinks Moleculares que Ensinamos"
+    ],
+    "paragraphs": [
+      "O que você vai criar",
+      "Caviar, gema, macarrão de gel, defumação e espumas — as cinco técnicas que impressionam clientes e aumentam o valor de cada taça.",
+      "Caviar de Ouro",
+      "Esferificação Caviar",
+      "Gema de Maracujá",
+      "Esferificação Gema",
+      "Macarrão de Gel",
+      "Gelificação"
+    ],
+    "buttons": [],
+    "imgCount": 9
+  },
+  {
+    "index": 3,
+    "attrs": "id=\"aprender\" class=\"border-y border-border bg-card/40\" data-tsd-source=\"/src/routes/index.tsx:310:7\"",
+    "headings": [
+      "O que Você Vai Aprender",
+      "O que é Mixologia",
+      "História da Coquetelaria",
+      "Estrutura de um Drink",
+      "Equipamentos e Insumos",
+      "Ingredientes",
+      "Técnicas de Mixologia",
+      "Processos Criativos",
+      "Empreendendo com Mixologia",
+      "Criação de Drinks Autorais",
+      "Precificação",
+      "Escala e Crescimento",
+      "Mão na Massa"
+    ],
+    "paragraphs": [
+      "Conteúdo do curso",
+      "01O que é MixologiaFundamentos, conceitos e o papel do mixologista na coquetelaria moderna.",
+      "02História da CoquetelariaDos clássicos mundiais à revolução molecular dos bartenders de hoje.",
+      "03Estrutura de um DrinkBase, agridoce, balance, diluição e finalização de qualquer receita.",
+      "04Equipamentos e InsumosFerramentas, vidrarias, hidrocoloides e tudo que você precisa para começar.",
+      "05IngredientesDestilados, frutas, aromáticos e combinações que valorizam o seu drink.",
+      "06Técnicas de MixologiaEsferificação, gelificação, defumação e espumas na prática.",
+      "07Processos CriativosMétodos para criar do zero e nunca mais depender de receitas prontas."
+    ],
+    "buttons": [
+      "Seja um Mixologista"
+    ],
+    "imgCount": 0
+  },
+  {
+    "index": 4,
+    "attrs": "id=\"quem-somos\" class=\"mx-auto max-w-6xl px-4 py-24\" data-tsd-source=\"/src/routes/index.tsx:341:7\"",
+    "headings": [
+      "Quem Somos Nós"
+    ],
+    "paragraphs": [
+      "Nossa história",
+      "A JJ Bar &amp; Barista Store &amp; Academy é uma escola especializada de bartenders, baristas e empreendedores, que nasceu a partir de cafeterias, bares e restaurantes que tivemos na nossa história, se especializando em eventos nos anos seguintes com mais de 7 mil contratos em todo o Brasil e exterior, nos principais eventos como a Copa do Mundo, e formando milhares de alunos dentro do segmento de alimentos e bebidas.",
+      "7 mil+",
+      "Contratos realizados",
+      "Milhares",
+      "Alunos formados",
+      "Brasil &amp; Exterior",
+      "Nos principais eventos"
+    ],
+    "buttons": [],
+    "imgCount": 0
+  },
+  {
+    "index": 5,
+    "attrs": "id=\"instrutor\" class=\"border-y border-border bg-card/40\" data-tsd-source=\"/src/routes/index.tsx:373:7\"",
+    "headings": [
+      "Quem Será o Seu Instrutor",
+      "Felipe Martins"
+    ],
+    "paragraphs": [
+      "Formação e vivência",
+      "Diretor da JJ Bar &amp; Barista Store &amp; Academy",
+      "Felipe Martins é diretor da JJ Bar &amp; Barista Store &amp; Academy, além dos segmentos de eventos JJ Bar e JJ Barista, com outros negócios dentro desse universo como o Black Chef, restaurante físico e gastronomia para eventos, e a FG Store, que atua como e-commerce."
+    ],
+    "buttons": [],
+    "imgCount": 1
+  },
+  {
+    "index": 6,
+    "attrs": "id=\"faq\" class=\"mx-auto max-w-4xl px-4 py-24\" data-tsd-source=\"/src/routes/index.tsx:418:7\"",
+    "headings": [
+      "Perguntas &amp; Respostas"
+    ],
+    "paragraphs": [
+      "Dúvidas frequentes",
+      "Não. O curso parte do básico — o que é mixologia, estrutura de um drink e equipamentos — e avança para as técnicas moleculares. Iniciantes e profissionais avançados saem produzindo.",
+      "A parte teórica é online, e as aulas práticas de mão na massa acontecem na estrutura da JJ Bar &amp; Barista Store &amp; Academy, com todo o equipamento e insumos de mixologia molecular incluídos.",
+      "Esferificação caviar, esferificação gema (reversa), gelificação (macarrão de gel), defumação com cloche e smoking gun, e espumas com siphon. Todas praticadas por você, com acompanhamento do instrutor.",
+      "Sim. Ao concluir o curso e as aulas práticas, você recebe o certificado da JJ Bar &amp; Barista Store &amp; Academy, uma escola reconhecida no mercado de bebidas com milhares de alunos formados.",
+      "Além das técnicas, você aprende a precificar, criar drinks autorais e estruturar escala e crescimento — para transformar mixologia em uma nova receita mensal no seu bar, cafeteria ou eventos.",
+      "Você tem condições especiais de matrícula e uma garantia de 7 dias: se o curso não fizer sentido para você, devolvemos 100% do valor investido, sem burocracia."
+    ],
+    "buttons": [
+      "Seja um Mixologista"
+    ],
+    "imgCount": 0
+  },
+  {
+    "index": 7,
+    "attrs": "id=\"contato\" class=\"border-t border-border bg-card/40\" data-tsd-source=\"/src/routes/index.tsx:440:7\"",
+    "headings": [
+      "Contatos &amp; Redes Sociais"
+    ],
+    "paragraphs": [
+      "Fale com a gente",
+      "Instagram@jjbarebaristaWhatsApp(11) 99999-9999Site Oficialjjbarebarista.com.brAtendimento para matrículas, dúvidas sobre o curso e parcerias corporativas."
+    ],
+    "buttons": [
+      "Instagram@jjbarebarista",
+      "WhatsApp(11) 99999-9999",
+      "Site Oficialjjbarebarista.com.br"
+    ],
+    "imgCount": 0
+  },
+  {
+    "index": 8,
+    "attrs": "class=\"relative overflow-hidden\" data-tsd-source=\"/src/routes/index.tsx:495:7\"",
+    "headings": [
+      "Pronto para Agitaro Seu Próximo Capítulo?"
+    ],
+    "paragraphs": [
+      "Domine a mixologia molecular, crie drinks autorais e abra uma nova receita mensal com a escola que já formou milhares de profissionais no Brasil e no exterior.",
+      "Seja um MixologistaJJ Bar &amp; Barista Store &amp; Academy — Bartenders, Baristas e Empreendedores"
+    ],
+    "buttons": [
+      "Seja um Mixologista"
+    ],
+    "imgCount": 0
+  }
+]

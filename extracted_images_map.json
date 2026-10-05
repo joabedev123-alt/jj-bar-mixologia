@@ -1,0 +1,86 @@
+[
+  {
+    "count": 1,
+    "filename": "asset_01.jpg",
+    "size": 499748,
+    "ext": "jpg"
+  },
+  {
+    "count": 2,
+    "filename": "asset_02.jpg",
+    "size": 249988,
+    "ext": "jpg"
+  },
+  {
+    "count": 3,
+    "filename": "asset_03.jpg",
+    "size": 499748,
+    "ext": "jpg"
+  },
+  {
+    "count": 4,
+    "filename": "asset_04.jpg",
+    "size": 249988,
+    "ext": "jpg"
+  },
+  {
+    "count": 5,
+    "filename": "asset_05.jpg",
+    "size": 207688,
+    "ext": "jpg"
+  },
+  {
+    "count": 6,
+    "filename": "asset_06.jpg",
+    "size": 153716,
+    "ext": "jpg"
+  },
+  {
+    "count": 7,
+    "filename": "asset_07.jpg",
+    "size": 271836,
+    "ext": "jpg"
+  },
+  {
+    "count": 8,
+    "filename": "asset_08.jpg",
+    "size": 189412,
+    "ext": "jpg"
+  },
+  {
+    "count": 9,
+    "filename": "asset_09.jpg",
+    "size": 183112,
+    "ext": "jpg"
+  },
+  {
+    "count": 10,
+    "filename": "asset_10.jpg",
+    "size": 258708,
+    "ext": "jpg"
+  },
+  {
+    "count": 11,
+    "filename": "asset_11.jpg",
+    "size": 233816,
+    "ext": "jpg"
+  },
+  {
+    "count": 12,
+    "filename": "asset_12.jpg",
+    "size": 201008,
+    "ext": "jpg"
+  },
+  {
+    "count": 13,
+    "filename": "asset_13.jpg",
+    "size": 207692,
+    "ext": "jpg"
+  },
+  {
+    "count": 14,
+    "filename": "asset_14.jpg",
+    "size": 431924,
+    "ext": "jpg"
+  }
+]

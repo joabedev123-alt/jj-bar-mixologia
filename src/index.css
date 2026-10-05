@@ -2,14 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --radius: 0.75rem;
+  --background: oklch(14% 0.014 70);
+  --foreground: oklch(94% 0.02 85);
+  --card: oklch(18% 0.018 70);
+  --card-foreground: oklch(94% 0.02 85);
+  --popover: oklch(18% 0.018 70);
+  --popover-foreground: oklch(94% 0.02 85);
+  --primary: oklch(79% 0.14 85);
+  --primary-foreground: oklch(16% 0.03 70);
+  --secondary: oklch(24% 0.02 70);
+  --secondary-foreground: oklch(94% 0.02 85);
+  --muted: oklch(22% 0.018 70);
+  --muted-foreground: oklch(72% 0.03 80);
+  --accent: oklch(24% 0.02 70);
+  --accent-foreground: oklch(94% 0.02 85);
+  --destructive: oklch(60% 0.2 25);
+  --destructive-foreground: oklch(98% 0.005 85);
+  --border: oklch(79% 0.1 85 / 0.16);
+  --input: oklch(79% 0.1 85 / 0.16);
+  --ring: oklch(79% 0.14 85 / 0.45);
+  --gold-glow: oklch(88% 0.1 90);
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
-    background-color: #0B0B0B;
-    color: #F3E8CF;
+    background-color: var(--background);
+    color: var(--foreground);
     touch-action: manipulation;
   }
 
@@ -61,6 +85,17 @@
 }
 
 @layer utilities {
+  .gold-text {
+    background: linear-gradient(120deg, var(--gold-glow) 10%, var(--primary) 55%, oklch(62% 0.12 75) 90%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .gold-frame {
+    box-shadow: 0 0 0 1px var(--border), 0 24px 60px -24px oklch(79% 0.14 85 / 0.35);
+  }
+
   .text-gradient-gold {
     background: linear-gradient(135deg, #FFF1C5 0%, #D4AF37 45%, #AA8022 100%);
     -webkit-background-clip: text;
