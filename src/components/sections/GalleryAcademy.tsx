@@ -76,9 +76,9 @@ export default function GalleryAcademy() {
 
               <div className="flex items-center gap-4 shrink-0 rounded-2xl border border-border bg-background/60 p-4">
                 <div className="flex -space-x-3 overflow-hidden">
-                  <img className="inline-block h-11 w-11 rounded-full ring-2 ring-primary object-cover" src="/images/felipe martins.jpeg" alt="Felipe Martins" />
-                  <img className="inline-block h-11 w-11 rounded-full ring-2 ring-primary object-cover" src="/images/ensei neto.jpeg" alt="Ensei Neto" />
-                  <img className="inline-block h-11 w-11 rounded-full ring-2 ring-primary object-cover" src="/images/rafael andrade.jpeg" alt="Rafael Andrade" />
+                  <img className="inline-block h-11 w-11 rounded-full ring-2 ring-primary object-cover" loading="lazy" decoding="async" src="/images/felipe martins.jpeg" alt="Felipe Martins" />
+                  <img className="inline-block h-11 w-11 rounded-full ring-2 ring-primary object-cover" loading="lazy" decoding="async" src="/images/ensei neto.jpeg" alt="Ensei Neto" />
+                  <img className="inline-block h-11 w-11 rounded-full ring-2 ring-primary object-cover" loading="lazy" decoding="async" src="/images/rafael andrade.jpeg" alt="Rafael Andrade" />
                 </div>
                 <div className="text-left">
                   <span className="text-sm font-bold text-foreground block">+5.000 Alunos</span>

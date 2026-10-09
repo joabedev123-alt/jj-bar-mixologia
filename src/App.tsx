@@ -4,7 +4,9 @@ import DrinksOriginal from './components/original/DrinksOriginal'
 import CurriculumOriginal from './components/original/CurriculumOriginal'
 import AboutOriginal from './components/original/AboutOriginal'
 import GalleryAcademy from './components/sections/GalleryAcademy'
+import TestimonialsOriginal from './components/original/TestimonialsOriginal'
 import InstructorOriginal from './components/original/InstructorOriginal'
+import HowItWorksOriginal from './components/original/HowItWorksOriginal'
 import FaqOriginal from './components/original/FaqOriginal'
 import ContactOriginal from './components/original/ContactOriginal'
 import FinalCtaOriginal from './components/original/FinalCtaOriginal'
@@ -20,7 +22,9 @@ export default function App() {
         <CurriculumOriginal />
         <AboutOriginal />
         <GalleryAcademy />
+        <TestimonialsOriginal />
         <InstructorOriginal />
+        <HowItWorksOriginal />
         <FaqOriginal />
         <ContactOriginal />
         <FinalCtaOriginal />
