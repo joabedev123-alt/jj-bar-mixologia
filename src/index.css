@@ -80,7 +80,7 @@
   }
 
   img {
-    content-visibility: auto;
+    max-width: 100%;
   }
 }
 

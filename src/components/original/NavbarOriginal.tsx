@@ -15,7 +15,7 @@ export default function NavbarOriginal() {
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
     if (!open) return
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false)
+    const onKey = (e: { key: string }) => e.key === 'Escape' && setOpen(false)
     const onResize = () => window.innerWidth >= 1024 && setOpen(false)
     window.addEventListener('keydown', onKey)
     window.addEventListener('resize', onResize)
