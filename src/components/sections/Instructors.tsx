@@ -5,7 +5,7 @@ import SmartImage from '../ui/SmartImage'
 import { SOCIAL } from '../../lib/constants'
 
 const instructorSocials = [
-  { ...SOCIAL.felipe, label: '@felipejjbarebarista' },
+  { ...SOCIAL.felipe, label: '@felipemartins.barebarista' },
   { ...SOCIAL.academy, label: '@jjbarebaristastore_academy' },
   { ...SOCIAL.eventosBarista, label: '@jjbarebarista' },
   { ...SOCIAL.eventosBar, label: '@jjbar_eventos' },

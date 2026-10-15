@@ -23,8 +23,8 @@ export const SITE = {
 
 export const SOCIAL = {
   felipe: {
-    handle: '@felipejjbarebarista',
-    url: 'https://instagram.com/felipejjbarebarista',
+    handle: '@felipemartins.barebarista',
+    url: 'https://instagram.com/felipemartins.barebarista',
     icon: 'bi-instagram',
     title: 'Felipe Martins',
   },
@@ -32,21 +32,36 @@ export const SOCIAL = {
     handle: '@jjbarebaristastore_academy',
     url: 'https://instagram.com/jjbarebaristastore_academy',
     icon: 'bi-instagram',
-    title: 'JJ Store & Academy',
+    title: 'Store e Academy',
   },
   eventosBarista: {
     handle: '@jjbarebarista',
     url: 'https://instagram.com/jjbarebarista',
     icon: 'bi-instagram',
-    title: 'JJ Bar & Barista',
+    title: 'Eventos Barista',
   },
   eventosBar: {
     handle: '@jjbar_eventos',
     url: 'https://instagram.com/jjbar_eventos',
     icon: 'bi-instagram',
-    title: 'JJ Bar Eventos',
+    title: 'Eventos de Bar',
+  },
+  youtube: {
+    handle: '@jjbarebarista',
+    url: 'https://www.youtube.com/@jjbarebarista',
+    icon: 'bi-youtube',
+    title: 'Canal no YouTube',
   },
 }
+
+// Lista oficial de redes sociais exibida no Contato e no Footer
+export const SOCIAL_LINKS = [
+  SOCIAL.felipe,
+  SOCIAL.academy,
+  SOCIAL.eventosBarista,
+  SOCIAL.eventosBar,
+  SOCIAL.youtube,
+].filter((social) => social.url)
 
 export const NAV_LINKS = [
   { label: 'O Curso', href: '#o-curso' },

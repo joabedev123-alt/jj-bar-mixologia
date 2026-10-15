@@ -1,12 +1,5 @@
 import Container from '../ui/Container'
-import { SITE, SOCIAL } from '../../lib/constants'
-
-const socialLinks = [
-  { ...SOCIAL.felipe, label: '@felipejjbarebarista' },
-  { ...SOCIAL.academy, label: '@jjbarebaristastore_academy' },
-  { ...SOCIAL.eventosBarista, label: '@jjbarebarista' },
-  { ...SOCIAL.eventosBar, label: '@jjbar_eventos' },
-]
+import { SITE, SOCIAL_LINKS } from '../../lib/constants'
 
 export default function Footer() {
   return (
@@ -81,11 +74,11 @@ export default function Footer() {
 
           <div>
             <h3 className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-primary">
-              Redes Oficiais Instagram
+              Acompanhe nosso trabalho
             </h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              {socialLinks.map((social) => (
-                <li key={social.handle + social.label}>
+              {SOCIAL_LINKS.map((social) => (
+                <li key={social.url}>
                   <a
                     href={social.url}
                     target="_blank"
@@ -93,11 +86,11 @@ export default function Footer() {
                     className="inline-flex items-center gap-2.5 transition-colors duration-200 hover:text-primary group"
                   >
                     <span className="flex h-7 w-7 items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-200">
-                      <i className={`bi ${social.icon || 'bi-instagram'} text-xs`} aria-hidden="true" />
+                      <i className={`bi ${social.icon} text-xs`} aria-hidden="true" />
                     </span>
                     <div className="flex flex-col">
                       <span className="text-xs text-muted-foreground font-medium">{social.title}</span>
-                      <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">{social.label}</span>
+                      <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">{social.handle}</span>
                     </div>
                   </a>
                 </li>
