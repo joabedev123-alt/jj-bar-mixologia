@@ -1,122 +1,199 @@
-import Container from '../ui/Container'
-import SectionHeading from '../ui/SectionHeading'
+﻿import Container from '../ui/Container'
 import Reveal from '../ui/Reveal'
-import CtaButton from '../ui/CtaButton'
-import { CHECKOUT_URL, PRECO_MIXOLOGIA, PRECO_ANTERIOR_MIXOLOGIA, PRECO_PARCELADO, SITE } from '../../lib/constants'
+import { CHECKOUT_URL, PRECO_MIXOLOGIA, PRECO_PARCELADO } from '../../lib/constants'
 
-const includedItems = [
-  { text: 'Acesso Completo aos 8 Módulos de Mixologia Profissional', value: 'R$ 497,00' },
-  { text: 'BÔNUS 01: Treinamento "Como Transformar Mixologia em Negócio"', value: 'R$ 197,00' },
-  { text: 'BÔNUS 02: Planilha de Precificação Inteligente de Drinks & CMV', value: 'R$ 147,00' },
-  { text: 'BÔNUS 03: E-book Exclusivo "10 Drinks Moleculares Autorais"', value: 'R$ 153,00' },
-  { text: 'Certificado Oficial Emitido pela JJ Bar e Barista Academy', value: 'Incluso' },
-  { text: 'Aulas Práticas Gravadas em Alta Definição (100% Online)', value: 'Incluso' },
-  { text: 'Suporte Exclusivo a Dúvidas na Plataforma', value: 'Incluso' },
-  { text: 'Acesso Vitalício & Ilimitado sem Mensalidades', value: 'Incluso' },
+const items = [
+  { name: 'O que é Mixologia, Fundamentos & História da Coquetelaria', price: 'R$ 197' },
+  { name: 'Estrutura dos Drinks', price: 'R$ 97' },
+  { name: 'Lista Equipamentos e Insumos', price: 'R$ 97' },
+  { name: 'Lista de Ingredientes', price: 'R$ 97' },
+  { name: 'Técnicas de Mixologia', price: 'R$ 197' },
+  { name: 'Empreendendo com mixologia e Criação de drinks autorais', price: 'R$ 197' },
+  { name: 'Precificação', price: 'R$ 47' },
+  { name: 'Escala e Crescimento', price: 'R$ 197' },
+  { name: 'Curso prático de mixologia', price: 'R$ 997' },
+]
+
+const bonuses = [
+  'Lista de equipamentos e ingredientes',
+  'Drinks moleculares',
+  'Planilha de precificação',
 ]
 
 export default function ValueStack() {
   return (
-    <section id="oferta" className="relative overflow-hidden bg-gradient-to-b from-[#121212] via-[#1A160F] to-[#0D0D0D] py-16 sm:py-24 lg:py-32 border-y border-gold/30">
-      {/* Glow dourado */}
+    <section id="oferta" className="relative overflow-hidden bg-gradient-to-b from-[#0B0B0B] via-[#14120D] to-[#0B0B0B] py-10 sm:py-16 lg:py-20 border-y border-gold/20">
+      {/* Glow dourado suave no fundo */}
       <div
-        className="pointer-events-none absolute left-1/2 top-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-25 blur-3xl"
-        style={{ background: 'radial-gradient(circle, rgba(212,175,55,0.4) 0%, transparent 70%)' }}
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-20 blur-3xl"
+        style={{ background: 'radial-gradient(circle, rgba(212,175,55,0.45) 0%, transparent 70%)' }}
         aria-hidden="true"
       />
 
-      <Container className="relative flex flex-col items-center gap-10 sm:gap-14">
-        <SectionHeading
-          eyebrow="OFERTA ESPECIAL LIMITADA"
-          title="TUDO O QUE VOCÊ PRECISA PARA DOMINAR A MIXOLOGIA DE ALTO PADRÃO."
-          subtitle="Aproveite o lote promocional de lançamento com mais de 70% de desconto e garanta todos os bônus inclusos."
-        />
+      <Container className="relative flex flex-col items-center gap-6 sm:gap-10 px-3 sm:px-6">
+        {/* Cabeçalho da Seção */}
+        <div className="flex w-full max-w-4xl flex-col items-center text-center gap-2 sm:gap-3">
+          <Reveal>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.2em] text-gold">
+              <i className="bi bi-stars" aria-hidden="true" />
+              Condição Especial de Inscrição
+            </span>
+          </Reveal>
 
-        <Reveal className="w-full max-w-2xl">
-          <div className="overflow-hidden rounded-3xl border-2 border-gold/60 bg-gradient-to-b from-[#1E1A11] via-[#15130E] to-[#0A0A0A] p-6 shadow-gold sm:p-10 relative">
+          <Reveal delay={0.06}>
+            <h2 className="font-display text-2xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-white uppercase tracking-tight">
+              TUDO O QUE VOCÊ PRECISA PARA COMEÇAR A <span className="gold-text">ENXERGAR A COQUETELARIA</span> DE OUTRA FORMA.
+            </h2>
+          </Reveal>
+
+          <Reveal delay={0.12}>
+            <p className="max-w-2xl text-xs sm:text-base leading-relaxed text-[#C8BEA7]">
+              Tenha acesso ao treinamento completo da JJ Bar &amp; Barista Academy e inicie seu desenvolvimento técnico agora.
+            </p>
+          </Reveal>
+        </div>
+
+        {/* Quadro Principal na Mesma Paleta Dark & Gold do Site */}
+        <Reveal className="w-full max-w-5xl">
+          <div className="overflow-hidden rounded-2xl sm:rounded-3xl border border-gold/40 bg-gradient-to-b from-[#18140D] via-[#12100B] to-[#0A0A0A] p-4 sm:p-8 lg:p-10 shadow-2xl relative">
+            
             {/* Faixa Superior Promocional */}
-            <div className="absolute top-0 right-0 left-0 bg-gold-gradient py-1.5 text-center">
-              <span className="text-[10px] font-extrabold uppercase tracking-[0.25em] text-[#0B0B0B]">
-                CONDIÇÃO EXCLUSIVA DE LANÇAMENTO ONLINE
+            <div className="absolute top-0 right-0 left-0 bg-gold-gradient py-1 text-center">
+              <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#0B0B0B]">
+                LOTE PROMOCIONAL EXCLUSIVO COM ACESSO IMEDIATO
               </span>
             </div>
 
-            <div className="border-b border-gold/20 pb-6 pt-4 text-center mt-2">
-              <span className="inline-block rounded-full bg-gold/15 border border-gold/40 px-4 py-1 text-xs font-bold uppercase tracking-wider text-gold">
-                Formação Completa + 3 Bônus
-              </span>
-              <h3 className="mt-3 font-display text-2xl sm:text-4xl font-extrabold text-white">
-                Curso de Mixologia
-              </h3>
-              <p className="mt-1 text-xs sm:text-sm font-medium text-gold">
-                JJ Bar e Barista Academy
-              </p>
-            </div>
-
-            {/* Checklist de Itens Inclusos com Valores */}
-            <div className="py-6 space-y-3.5">
-              {includedItems.map((item) => (
-                <div key={item.text} className="flex items-start justify-between gap-3 border-b border-white/5 pb-2.5">
-                  <div className="flex items-start gap-2.5">
-                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold text-[11px] font-bold text-[#0B0B0B] mt-0.5">
-                      <i className="bi bi-check" aria-hidden="true" />
-                    </span>
-                    <span className="text-xs sm:text-sm font-medium leading-relaxed text-[#E7D5A7]">
-                      {item.text}
-                    </span>
+            <div className="pt-3 grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-8 items-center">
+              
+              {/* Coluna Esquerda: Itens do Curso e Módulos */}
+              <div className="lg:col-span-7 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between border-b border-gold/20 pb-2.5 mb-2.5">
+                    <div>
+                      <span className="inline-block rounded-full bg-gold/15 border border-gold/30 px-2 py-0.5 text-[9px] sm:text-[10px] font-extrabold uppercase tracking-wider text-gold">
+                        CURSO COMPLETO ONLINE
+                      </span>
+                      <h3 className="mt-0.5 font-display text-xl sm:text-3xl font-extrabold text-white">
+                        Curso de Mixologia
+                      </h3>
+                    </div>
+                    <p className="text-right text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-gold/80">
+                      JJ Bar &amp; Barista Academy
+                    </p>
                   </div>
-                  <span className="text-[11px] font-semibold text-gold shrink-0 hidden sm:block">
-                    {item.value}
+
+                  {/* Lista compacta e elegante dos 9 itens */}
+                  <div className="space-y-1.5 sm:space-y-2">
+                    {items.map((item, idx) => (
+                      <div
+                        key={idx}
+                        className="flex items-center justify-between gap-2 rounded-lg border border-white/5 bg-white/[0.02] px-2.5 sm:px-3 py-1.5 transition-colors hover:border-gold/30 hover:bg-gold/[0.03]"
+                      >
+                        <div className="flex items-center gap-2 sm:gap-2.5 min-w-0 flex-1">
+                          <span className="flex h-4.5 w-4.5 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full bg-gold/20 text-gold text-[11px] border border-gold/40">
+                            <i className="bi bi-check-lg" aria-hidden="true" />
+                          </span>
+                          <span className="text-[11px] sm:text-sm font-medium text-[#F3E8CF] leading-tight">
+                            {item.name}
+                          </span>
+                        </div>
+                        <span className="shrink-0 rounded bg-gold/10 border border-gold/30 px-2 py-0.5 text-[10px] sm:text-xs font-bold text-gold whitespace-nowrap ml-1.5">
+                          {item.price}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Totalizador */}
+                <div className="mt-3 flex items-center justify-between rounded-xl border border-gold/30 bg-[#0E0D0A] px-3.5 py-2">
+                  <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#A89F8D]">
+                    Total de todos os módulos:
+                  </span>
+                  <span className="font-display text-base sm:text-lg font-bold text-white/50 line-through">
+                    R$ 2.123
                   </span>
                 </div>
-              ))}
+              </div>
+
+              {/* Coluna Direita: Box da Oferta + Bônus + CTA */}
+              <div className="lg:col-span-5">
+                <div className="rounded-2xl border-2 border-gold/60 bg-gradient-to-b from-[#241D12] via-[#1B160E] to-[#100E0A] p-4 sm:p-6 text-center shadow-gold relative">
+                  
+                  {/* Badge Topo */}
+                  <div className="inline-block rounded-full bg-gold-gradient px-3 py-0.5 text-[9px] sm:text-[10px] font-black uppercase tracking-widest text-[#0B0B0B] shadow-sm">
+                    OFERTA ESPECIAL HOJE
+                  </div>
+
+                  {/* Bloco de Bônus Inclusos */}
+                  <div className="mt-2.5 sm:mt-3 rounded-xl border border-gold/30 bg-[#0D0B08] p-3 text-left">
+                    <p className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-gold flex items-center gap-1.5 mb-1.5">
+                      <i className="bi bi-gift-fill text-gold" aria-hidden="true" />
+                      + 3 BÔNUS EXCLUSIVOS INCLUSOS:
+                    </p>
+                    <ul className="space-y-1">
+                      {bonuses.map((bonus, bIdx) => (
+                        <li key={bIdx} className="flex items-start gap-1.5 text-[11px] sm:text-xs font-semibold text-[#F3E8CF] leading-tight">
+                          <span className="text-gold font-bold">{bIdx + 1})</span>
+                          <span>{bonus}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Chamada de Preço */}
+                  <p className="text-[10px] sm:text-xs font-extrabold uppercase tracking-[0.2em] text-gold mt-3">
+                    Hoje você só paga:
+                  </p>
+
+                  <div className="my-1 flex items-baseline justify-center gap-2">
+                    <span className="font-display text-3xl sm:text-5xl font-black text-white tracking-tight drop-shadow-[0_2px_12px_rgba(212,175,55,0.4)]">
+                      {PRECO_MIXOLOGIA}
+                    </span>
+                    <span className="text-[10px] font-extrabold text-gold uppercase tracking-wider">
+                      à vista
+                    </span>
+                  </div>
+
+                  <p className="text-[10px] sm:text-xs font-semibold text-[#C8BEA7]">
+                    ou em até <span className="font-bold text-white">{PRECO_PARCELADO}</span> no cartão
+                  </p>
+
+                  {/* Botão de Ação */}
+                  <div className="mt-3">
+                    <a
+                      href={CHECKOUT_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group relative inline-flex min-h-[48px] w-full cursor-pointer select-none items-center justify-center gap-2 rounded-full bg-gold-gradient py-3 px-6 text-center font-sans text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[#0B0B0B] shadow-gold hover:brightness-110 active:scale-[0.98] transition-all duration-200 border border-[#FFF1C5]"
+                    >
+                      <span>QUERO ME INSCREVER</span>
+                      <i className="bi bi-arrow-right-circle text-base transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+                    </a>
+                  </div>
+
+                  {/* Selos de Garantia */}
+                  <div className="mt-3 pt-2.5 border-t border-white/10 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-[9px] sm:text-[11px] font-medium text-[#A89F8D]">
+                    <span className="flex items-center gap-1 text-white/90">
+                      <i className="bi bi-shield-check text-gold" aria-hidden="true" />
+                      Garantia 7 Dias
+                    </span>
+                    <span className="flex items-center gap-1 text-white/90">
+                      <i className="bi bi-lightning-charge-fill text-gold" aria-hidden="true" />
+                      Acesso Imediato
+                    </span>
+                    <span className="flex items-center gap-1 text-white/90">
+                      <i className="bi bi-credit-card-fill text-gold" aria-hidden="true" />
+                      Pagamento Seguro
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+
             </div>
 
-            {/* Caixa de Preço e CTA */}
-            <div className="rounded-2xl border-2 border-gold/50 bg-[#12100A] p-6 sm:p-8 text-center shadow-dark-card">
-              <p className="text-sm text-[#888888] line-through font-medium">
-                De {PRECO_ANTERIOR_MIXOLOGIA} + R$ 497 em bônus (Valor Total: R$ 994,00)
-              </p>
-              
-              <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-gold mt-1">
-                Por apenas nesta página:
-              </p>
-
-              <div className="my-2 flex items-center justify-center gap-2">
-                <span className="font-display text-5xl sm:text-6xl font-black text-white tracking-tight">
-                  {PRECO_MIXOLOGIA}
-                </span>
-                <span className="text-xs font-bold text-gold uppercase tracking-wider">
-                  à vista
-                </span>
-              </div>
-
-              <p className="text-sm font-semibold text-[#E7D5A7]">
-                ou em até <span className="text-white font-bold">{PRECO_PARCELADO}</span> no cartão
-              </p>
-
-              <div className="mt-6">
-                <CtaButton href={CHECKOUT_URL} size="lg" className="w-full text-base">
-                  {SITE.ctaText}
-                </CtaButton>
-              </div>
-
-              {/* Selos de Garantia e Segurança */}
-              <div className="mt-5 pt-4 border-t border-white/10 flex flex-wrap items-center justify-center gap-4 text-xs text-[#AAAAAA]">
-                <span className="flex items-center gap-1.5 text-white">
-                  <i className="bi bi-shield-lock-fill text-gold" aria-hidden="true" />
-                  Garantia de 7 Dias
-                </span>
-                <span className="flex items-center gap-1.5 text-white">
-                  <i className="bi bi-lightning-charge-fill text-gold" aria-hidden="true" />
-                  Acesso Imediato
-                </span>
-                <span className="flex items-center gap-1.5 text-white">
-                  <i className="bi bi-credit-card-2-front-fill text-gold" aria-hidden="true" />
-                  Pagamento Seguro Hotmart
-                </span>
-              </div>
-            </div>
           </div>
         </Reveal>
       </Container>

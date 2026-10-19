@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 
 const links = [
   { href: '#drinks', label: 'Drinks' },
   { href: '#aprender', label: 'Aprender' },
   { href: '#quem-somos', label: 'Quem Somos' },
   { href: '#instrutor', label: 'Instrutor' },
+  { href: '#oferta', label: 'Oferta' },
   { href: '#faq', label: 'FAQ' },
   { href: '#contato', label: 'Contato' },
 ]
@@ -47,7 +48,7 @@ export default function NavbarOriginal() {
         </nav>
         <div className="flex shrink-0 items-center gap-2">
           <a
-            href="#contato"
+            href="#oferta"
             onClick={() => setOpen(false)}
             className="rounded-full bg-primary px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-primary-foreground transition-transform hover:scale-105 sm:px-5 sm:text-xs"
           >
